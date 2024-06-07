@@ -1,0 +1,156 @@
+/* Styly pro vzhled stránky */
+
+/* Resetování stylů */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Základní styly */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 130px;
+  margin-left: -120px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 160px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.content a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 1080px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  nav {
+    padding: 15px 20px;
+  }
+  section {
+    padding: 3rem 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    padding: 10px 5%;
+    flex-direction: column;
+  }
+
+  nav .logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .content h1 {
+    font-size: 80px;
+  }
+
+  .content a {
+    font-size: 20px;
+    padding: 10px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 60px;
+  }
+
+  .content a {
+    font-size: 18px;
+    padding: 8px 30px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 0;
+  }
+}

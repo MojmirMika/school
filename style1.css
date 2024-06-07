@@ -1,0 +1,156 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ /* Základní styly */
+ body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #fad91f;
+   overflow-y: auto;
+   height: 100%;
+
+ }
+ .logo{
+   position: absolute;
+   width: 130px;
+   margin-left: 37px;
+   margin-top: 37px;
+   z-index: 1;
+ }
+.container{
+   max-width: 1068px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 35px;
+}
+
+.navbar{
+   display: flex;
+   column-gap: 5rem;
+   margin-left: 300px;
+}
+.navbar a{
+   color: black;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+.navbar a:hover{
+   color: red;
+   border-bottom: 3px solid red;
+}
+
+
+.search-box input{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.cars{
+   margin-left: 30px;  
+}
+.box{
+   position: absolute;
+   margin-top: 150px;
+   margin-left: 850px;
+}
+.box2{
+   position: absolute;
+   margin-top: 400px;
+   margin-left: 850px;
+}
+.box3{
+   position: absolute;
+   margin-top: 650px;
+   margin-left: 850px;
+}
+.box4{
+   position: absolute;
+   margin-top: 880px;
+   margin-left: 850px;
+}
+.box5{
+   position: absolute;
+   margin-top: 1150px;
+   margin-left: 850px;
+}
+.box6{
+   position: absolute;
+   margin-top: 1500px;
+   margin-left: 850px;
+}
+.box7{
+   position: absolute;
+   margin-top: 1790px;
+   margin-left: 850px;
+}
+.imgPorsche{
+   position:absolute;
+   margin-left: -150px;
+   cursor: pointer; 
+}
+.imgAudi{
+   position:absolute;
+   margin-left: -190px;
+   height: 200px;
+   cursor: pointer;
+}
+.imgBmw{
+   position:absolute;
+   margin-left: -170px;
+   margin-top: -50px;
+   height: 250px;
+   cursor: pointer;
+}
+.imgMercedes{
+   position:absolute;
+   margin-left: -170px;
+   margin-top: -10px;
+   height: 220px;
+   cursor: pointer;
+}
+.imgSkoda{
+   position:absolute;
+   margin-left: -170px;
+   margin-top: -30px;
+   height: 280px;
+   cursor: pointer;
+}
+.imgToyota{
+   position:absolute;
+   margin-left: -280px;
+   margin-top: -30px;
+   height: 350px;
+   cursor: pointer;
+}
+.imgHyundai{
+   position:absolute;
+   margin-left: -180px;
+   margin-top: -30px;
+   height: 300px;
+   cursor: pointer;
+}
+.container {
+   position: relative;
+   max-width: 1068px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 100%;
+   overflow-y: auto;
+ }
+
+ 
