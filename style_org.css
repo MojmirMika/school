@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root {
+    --main-white: #ffffff;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-black: #000000;
+    --main-green: #448804;
+    --main-orange: #f59300;
+}
+
+
+/* Tlačítka v menu */
+.menu-item {
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: white; /* Barva textu */
+    background-color: var(--main-orange); /* Barva tlačítek */
+    padding: 10px 20px;
+    border-radius: 5px; /* Zaoblené rohy tlačítek */
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+
+/* Resetování stylů */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Kontejner pro strukturu */
+  .structure-container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hlavní nadpis */
+  .title {
+    text-align: center;
+    color: #448804;
+    margin-bottom: 20px;
+  }
+  
+  /* Sekce */
+  .section {
+    margin-bottom: 20px;
+    border: 2px solid #448804;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #e8f5e9;
+  }
+  
+  /* Nadpis sekce */
+  .section-title {
+    background-color: #448804;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0;
+  }
+  
+  /* Tabulka */
+  .structure-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed; /* Zajišťuje rovnoměrné rozložení sloupců */
+  }
+  
+  .structure-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    text-align: left;
+  }
+  
+  .structure-table td:nth-child(3) {
+    width: 150px; /* Šířka pro telefonní čísla */
+    text-align: right; /* Zarovnání doprava */
+  }
+  
+  .structure-table td:nth-child(4) {
+    width: 200px; /* Šířka pro e-mailové adresy */
+  }
+  
+  .structure-table td:first-child {
+    font-weight: bold;
+  }
+  
+  .structure-table a {
+    color: #448804;
+    text-decoration: none;
+  }
+  
+  .structure-table a:hover {
+    text-decoration: underline;
+  }
+  .menu {
+    display: flex;
+    justify-content: center; /* Vycentrování tlačítek */
+    gap: 20px; /* Mezera mezi tlačítky */
+    padding: 20px 0; /* Prostor kolem menu */
+}
