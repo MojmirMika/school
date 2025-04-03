@@ -10,41 +10,64 @@
     --main-gray: #303841;
     --main-black: #000000;
     --main-green: #448804;
+    --secondary-green: #006400;
     --main-orange: #f59300;
 }
 
-/* Logo */
+/* Hlavička */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 .logo {
-    position: relative; 
-    left: 250px; 
-    width: 20%;
-    height: 15vh;
+    width: 300px;
 }
 
-/* Nadpis */
-.nadpis {
-    text-align: center;
-    color: var(--main-black);
-    position: relative;
-    top: -100px;
+/* Kontejner pro hlavní obsah */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-/* Text blok */
-.text-block {
-    text-align: justify;
-    position: relative;
-    max-width: 800px; 
-    margin: 0 auto;   
-    padding: 10px;    
+/* Sekce o společnosti */
+.about {
+    width: 60%;
+}
+
+.about h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 /* Certifikát */
-.certifikat {
-    position: relative;
-    top: -350px;
-    left: 1400px;
-    padding-right: 10px;        
+.certificate {
+    width: 35%;
+    text-align: center;
 }
+
+.certificate img {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 200px;
+    margin-bottom: 140px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
 
 
 /* Nadpis nabídky */
@@ -120,12 +143,12 @@
 
 .flip-card-front {
     background-color: #bbb;
-    color: black;
+    color: var(--main-black)
 }
 
 .flip-card-back {
     background-color: #636363;
-    color: white;
+    color: var(--main-white);
     transform: rotateY(180deg);
 }
 
@@ -181,7 +204,7 @@
 .map-section {
     text-align: center;
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--main-white)
 }
 
 .map-section h2 {

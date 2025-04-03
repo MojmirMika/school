@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chov koní</title>
+    <link rel="icon" type="image/png" href="images/AgramM_logo.jpg">
     <link rel="stylesheet" href="style_kun.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
+
 <body>
     <!-- Navigační menu -->
     <header class="top-menu">
         <nav>
             <ul>
-                <li><a href="#">O nás</a></li>
-                <li><a href="#">Chov koní</a></li>
-                <li><a href="#">Chov skotu</a></li>
-                <li><a href="#">Chov prasat</a></li>
-                <li><a href="#">Areál Podzámčí</a></li>
+                <li><a href="maturitni_prace.html">O nás</a></li>
+                <li><a href="chov_koni.html">Chov koní</a></li>
+                <li><a href="chov_skotu.html">Chov skotu</a></li>
+                <li><a href="chov_prasat.html">Chov prasat</a></li>
+                <li><a href="areal_podzamci.html">Areál Podzámčí</a></li>
             </ul>
         </nav>
     </header>
-
     <!-- Hlavní banner -->
-    <div class="banner">       
+    <div class="banner">
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="videos/horse.mp4" type="video/mp4">
+            Váš prohlížeč nepodporuje HTML5 video.
+          </video>
         <div class="banner-image">
             <h1>Chov koní</h1>
-            <img src="images/hlava_kun.png" alt="Kůň">
+            <a href="#chovKoni"><button>Přejít na chov koní</button></a>
+
         </div>
-    </div>
+    </div>  
 
     <div class="container">
         <!-- Postranní panel -->
         <aside class="sidebar">
             <h2>Nabídka</h2>
             <ul>
-                <li><a href="#">Kontakty</a></li>
-                <li><a href="#">Krmivo</a></li>
-                <li><a href="#">Doporučení</a></li>
-                <li><a href="#">Doplňky výživy</a></li>
+                <li><a href="kone_kont.html">Kontakty</a></li>
+                <li><a href="kone_krm.html">Krmivo</a></li>
+                <li><a href="kone_dopo.html">Doporučení</a></li>
+                <li><a href="kone_dopln.html">Doplňky výživy</a></li>
             </ul>
             <h2>Novinky</h2>
         </aside>
 
         <!-- Hlavní obsah -->
-        <main class="content">
-            <section>
-                <h2>Chov koní</h2>
-                <p>V konírně se nachází 12 boxů pro koně, sedlovna. Ve volné stáji je kapacita 16 – 20 koní na odchov + chovné kobyly.</p>
+        <main class="content" id="chovKoni">
+            <section >
+                <h2 >Chov koní</h2>
+                <p>V konírně se nachází 12 boxů pro koně, sedlovna. Ve volné stáji je kapacita 16 – 20 koní na odchov +
+                    chovné kobyly.</p>
                 <div class="images-row">
                     <img src="images/staj1.jpg" alt="Stáj 1">
                     <img src="images/staj2.jpg" alt="Stáj 2">
@@ -69,5 +80,7 @@
             </section>
         </main>
     </div>
+
 </body>
+
 </html>

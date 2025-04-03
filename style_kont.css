@@ -10,6 +10,7 @@
     --main-gray: #303841;
     --main-black: #000000;
     --main-green: #448804;
+    --secondary-green: #006400;
     --main-orange: #f59300;
 }
 
@@ -44,21 +45,21 @@ body {
 
 .title {
     text-align: center;
-    color: #006400;
+    color: var(--main-green);
     margin-bottom: 20px;
 }
 
 .contact-card {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #006400;
+    border: 1px solid var(--main-green);
     border-radius: 10px;
     background: #f0f8f0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card h2 {
-    background: #006400;
+    background: var(--main-green);
     color: #fff;
     padding: 10px;
     border-radius: 8px;
@@ -75,7 +76,7 @@ body {
 }
 
 .contact-info a {
-    color: #006400;
+    color: var(--secondary-green);
     text-decoration: none;
 }
 
