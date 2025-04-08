@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chov skotu</title>
+    <link rel="stylesheet" href="style_skot.css">
+    <link rel="stylesheet" href="style_kun.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">O nás</a></li>
+                <li><a href="chov_koni.html">Chov koní</a></li>
+                <li><a href="chov_skotu.html">Chov skotu</a></li>
+                <li><a href="chov_prasat.html">Chov prasat</a></li>
+                <li><a href="areal_podzamci.html">Areál Podzámčí</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="videos/cow.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+              </video>
+            <div class="banner-image">
+                <h1>Chov skotu</h1>
+                <a href="#chovSkotu"><button>Přejít na chov skotu</button></a>
+
+            </div>
+        </div>  
+    </header>
+    
+    <main>
+        <section class="info" id="chovSkotu">
+            <h2>O našem chovu</h2>
+            <p>Společnost AgramM,spol. s r.o. nabízí chovatelům mléčné náhražky, startery granulované i müsli, minerální krmiva a speciality.</p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Fotogalerie</h2>
+            <div class="image-container">
+                <img src="images/kravy.jpg" alt="Farma">
+                <img src="images/kravin1.jpg" alt="Kravín">
+                <img src="images/kravin2" alt="Kravín">
+            </div>
+        </section>
+    </main>
+    
+    <aside class="sidebar" style="margin-top: -20%; margin-left: 10%;">
+        <h2>Nabídka</h2>
+        <ul>
+            <li><a href="kravy_kont.html">Kontakty</a></li>
+            <li><a href="kravy_krm.html">Krmivo</a></li>
+
+        </ul>
+        <h2>Novinky</h2>
+    </aside>
+      
+    <script>
+        document.querySelector(".menu-btn").addEventListener("click", function() {
+            document.querySelector(".menu").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

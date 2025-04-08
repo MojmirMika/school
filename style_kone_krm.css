@@ -1,0 +1,126 @@
+:root {
+  --main-white: #ffffff;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+  --main-black: #000000;
+  --main-green: #448804;
+  --secondary-green: #006400;
+  --main-orange: #f59300;
+}
+/* Základní nastavení */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Hlavička */
+.header {
+  background-color: var(--secondary-green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 150px;
+  border: 2px solid var(--main-green	); /* Zelený rámeček */
+  color: var(--main-green);
+  background-color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.back-button .arrow {
+ margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: var(--secondary-green);
+  color: white;
+}
+
+.back-button:hover .arrow {
+  transform: translateX(-2px);
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Oddíly */
+h1, h2, h3 {
+  color: #4caf50;
+}
+
+ul {
+  list-style: disc;
+  margin: 10px 0 20px 20px;
+}
+
+/* Akordeon */
+.accordion {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content.open {
+  max-height: 300px; /* Maximální výška obsahu */
+  padding: 15px;
+}
+
+/* Ikona v záhlaví */
+.accordion-header .icon {
+  font-size: 18px;
+  color: white;
+  transition: transform 0.4s ease;
+}
+
+.accordion-header.active .icon {
+  transform: rotate(180deg); /* Otočí ikonu při otevření */
+  content: "-"; /* Obsah se změní na minus */
+}

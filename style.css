@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+
+:root {
+    --main-white: #ffffff;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-black: #000000;
+    --main-green: #448804;
+    --main-orange: #f59300;
+}
+
+/* Logo */
+.logo {
+    position: relative; 
+    left: 250px; 
+    width: 20%;
+    height: 15vh;
+}
+
+/* Nadpis */
+.nadpis {
+    text-align: center;
+    color: var(--main-black);
+    position: relative;
+    top: -100px;
+}
+
+/* Text blok */
+.text-block {
+    text-align: justify;
+    position: relative;
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 10px;    
+}
+
+/* Certifikát */
+.certifikat {
+    position: relative;
+    top: -350px;
+    left: 1400px;
+    padding-right: 10px;        
+}
+
+
+/* Nadpis nabídky */
+.nabidka {
+    text-align: center;
+    margin-top: -300px;
+
+}
+
+/* Navigační menu */
+.menu {
+    display: flex;
+    justify-content: center; /* Vycentrování tlačítek */
+    gap: 20px; /* Mezera mezi tlačítky */
+    margin-bottom: 80px; /* Mezera mezi nabídkou a flip-kartami */
+}
+
+/* Tlačítka menu */
+.menu-item {
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: white; /* Barva textu */
+    background-color: var(--main-red); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hover efekt tlačítek */
+.menu-item:hover {
+    background-color: var(--main-blue);
+}
+
+/* Kontejner pro flip-karty */
+.flip-card-container {
+    display: flex;
+    justify-content: center; /* Vycentrování karet */
+    gap: 50px; /* Mezera mezi kartami */
+    flex-wrap: wrap; /* Zalomení řádku při menších obrazovkách */
+    margin: 0 auto; /* Středování celého bloku */
+}
+
+/* Styl pro flip-kartu */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+/* Styl pro vnitřek flip-karty */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Přední strana karty */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #636363;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Celkové pozadí sekce nabídky a flip karet */
+.nabidka,
+.menu, 
+.flip-card-container {
+    background-color: var(--main-green); /* Barva pozadí */
+    width: 100vw; /* Šířka na celou obrazovku */
+    margin: 0; /* Zruší mezery kolem */
+    padding: 20px 0; /* Vytvoří prostor nahoře a dole */
+}
+
+/* Text v nabídce */
+.nabidka {
+    color: var(--main-white); /* Barva textu */
+    margin-top: -200px;
+    text-align: center; /* Vycentrování textu */
+}
+
+/* Navigační menu */
+.menu {
+    display: flex;
+    justify-content: center; /* Vycentrování tlačítek */
+    gap: 20px; /* Mezera mezi tlačítky */
+    padding: 20px 0; /* Prostor kolem menu */
+}
+
+/* Tlačítka v menu */
+.menu-item {
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: white; /* Barva textu */
+    background-color: var(--main-orange); /* Barva tlačítek */
+    padding: 10px 20px;
+    border-radius: 5px; /* Zaoblené rohy tlačítek */
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+.menu-item:hover {
+    background-color: var(--main-gray); /* Hover efekt */
+}
+    
+/* Flip karty */
+.flip-card-container {
+    display: flex;
+    justify-content: center; /* Vycentrování karet */
+    gap: 50px; /* Mezera mezi kartami */
+    flex-wrap: wrap; /* Zalomení při menších obrazovkách */
+    padding: 20px 0; /* Prostor kolem karet */
+}
+
+.map-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.map-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.1);
+}
