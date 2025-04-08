@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+
+:root {
+    --main-white: #ffffff;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-black: #000000;
+    --main-green: #448804;
+    --secondary-green: #006400;
+    --main-orange: #f59300;
+}
+
+/* Hlavička */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 300px;
+}
+
+/* Kontejner pro hlavní obsah */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Sekce o společnosti */
+.about {
+    width: 60%;
+}
+
+.about h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Certifikát */
+.certificate {
+    width: 35%;
+    text-align: center;
+}
+
+.certificate img {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 200px;
+    margin-bottom: 140px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+
+
+/* Nadpis nabídky */
+.nabidka {
+    text-align: center;
+    margin-top: -300px;
+
+}
+
+/* Navigační menu */
+.menu {
+    display: flex;
+    justify-content: center; /* Vycentrování tlačítek */
+    gap: 20px; /* Mezera mezi tlačítky */
+    margin-bottom: 80px; /* Mezera mezi nabídkou a flip-kartami */
+}
+
+/* Tlačítka menu */
+.menu-item {
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: white; /* Barva textu */
+    background-color: var(--main-red); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hover efekt tlačítek */
+.menu-item:hover {
+    background-color: var(--main-blue);
+}
+
+/* Kontejner pro flip-karty */
+.flip-card-container {
+    display: flex;
+    justify-content: center; /* Vycentrování karet */
+    gap: 50px; /* Mezera mezi kartami */
+    flex-wrap: wrap; /* Zalomení řádku při menších obrazovkách */
+    margin: 0 auto; /* Středování celého bloku */
+}
+
+/* Styl pro flip-kartu */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+/* Styl pro vnitřek flip-karty */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Přední strana karty */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: var(--main-black)
+}
+
+.flip-card-back {
+    background-color: #636363;
+    color: var(--main-white);
+    transform: rotateY(180deg);
+}
+
+/* Celkové pozadí sekce nabídky a flip karet */
+.nabidka,
+.menu, 
+.flip-card-container {
+    background-color: var(--main-green); /* Barva pozadí */
+    width: 100vw; /* Šířka na celou obrazovku */
+    margin: 0; /* Zruší mezery kolem */
+    padding: 20px 0; /* Vytvoří prostor nahoře a dole */
+}
+
+/* Text v nabídce */
+.nabidka {
+    color: var(--main-white); /* Barva textu */
+    margin-top: -200px;
+    text-align: center; /* Vycentrování textu */
+}
+
+/* Navigační menu */
+.menu {
+    display: flex;
+    justify-content: center; /* Vycentrování tlačítek */
+    gap: 20px; /* Mezera mezi tlačítky */
+    padding: 20px 0; /* Prostor kolem menu */
+}
+
+/* Tlačítka v menu */
+.menu-item {
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    color: white; /* Barva textu */
+    background-color: var(--main-orange); /* Barva tlačítek */
+    padding: 10px 20px;
+    border-radius: 5px; /* Zaoblené rohy tlačítek */
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+.menu-item:hover {
+    background-color: var(--main-gray); /* Hover efekt */
+}
+    
+/* Flip karty */
+.flip-card-container {
+    display: flex;
+    justify-content: center; /* Vycentrování karet */
+    gap: 50px; /* Mezera mezi kartami */
+    flex-wrap: wrap; /* Zalomení při menších obrazovkách */
+    padding: 20px 0; /* Prostor kolem karet */
+}
+
+.map-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--main-white)
+}
+
+.map-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.1);
+}

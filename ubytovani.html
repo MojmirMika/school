@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubytování</title>
+    <link rel="icon" type="image/png" href="images/AgramM_logo.jpg">
+    <link rel="stylesheet" href="style_ubytovani.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Ubytování</h1>
+        <a href="areal_podzamci.html" class="back-button">
+            <span class="arrow">&#x2190;</span>
+            Zpět 
+          </a>
+        <p>Nabízíme ubytování v areálu Podzámčí Nový Světlov.</p>
+        <img src="images/ubytovani.jpg" alt="Hlavní budova ubytování">
+        
+    </header>
+
+    <section class="info">
+        <h2>Ceník</h2>
+        <p><strong>Celoročně:</strong> od 500,- Kč/osobu/noc<br>
+        <strong>Topná sezóna:</strong> +150 Kč</p>
+        <p><strong>Objednávky:</strong> 777 255 039</a></p>
+    </section>
+
+    <section class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">Apartmán</button>
+            <div class="accordion-content">
+                <p>Apartmán pro dvě osoby s kuchyňským koutem, sporákem, ledničkou a rychlovarnou konvicí.</p>
+                <div class="gallery">
+                    <img src="images/apartman1.jpg" alt="Apartmán" onclick="openGallery(0, 'apartment')">
+                    <img src="images/apartman3.jpg" alt="Ložnice" onclick="openGallery(1, 'apartment')">
+                    <img src="images/apartman5.jpg" alt="Obývací část" onclick="openGallery(2, 'apartment')">
+                </div>
+                <section class="info">
+                    <h2>Ceník</h2>
+                    <p><strong>Celoročně:</strong> od 500,- Kč/osobu/noc<br>
+                    <strong>Topná sezóna:</strong> +150 Kč</p>
+                    <p><strong>Objednávky:</strong> 777 255 039</a></p>
+                </section>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Pokoj č. 1</button>
+            <div class="accordion-content">
+                <p>Pokoj je vybaven ledničkou, rychlovarnou konvicí, televizí a Wi-Fi připojením.</p>
+                <div class="gallery">
+                    <img src="images/pokoj1.jpg" alt="Pokoj č. 1" onclick="openGallery(0, 'room')">
+                    <img src="images/pokoj2.jpg" alt="Kuchyňský kout" onclick="openGallery(1, 'room')">
+                </div>
+                <section class="info">
+                    <h2>Ceník</h2>
+                    <p><strong>Celoročně:</strong> od 500,- Kč/osobu/noc<br>
+                    <strong>Topná sezóna:</strong> +150 Kč</p>
+                    <p><strong>Objednávky:</strong> 777 255 039</a></p>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <button class="accordion-header">Pokoj č. 2</button>
+            <div class="accordion-content">
+                <p>Pokoj je vybaven ledničkou, rychlovarnou konvicí, televizí a Wi-Fi připojením.</p>
+                <div class="gallery">
+                    <img src="images/pokoj3.jpg" alt="Pokoj č. 1" onclick="openGallery(0, 'room')">
+                    <img src="images/pokoj4.jpg" alt="Kuchyňský kout" onclick="openGallery(1, 'room')">
+                </div>
+                <section class="info">
+                    <h2>Ceník</h2>
+                    <p><strong>Celoročně:</strong> od 500,- Kč/osobu/noc<br>
+                    <strong>Topná sezóna:</strong> +150 Kč</p>
+                    <p><strong>Objednávky:</strong> 777 255 039</a></p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeGallery(event)">
+        <span class="close" onclick="closeGallery(event)">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" onclick="event.stopPropagation()">
+        <button class="prev" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+        <button class="next" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+    </div>
+
+ 
+
+
+    <script src="script_ubytovani.js"></script>
+</body>
+</html>
